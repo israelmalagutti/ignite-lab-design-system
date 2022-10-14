@@ -3,8 +3,6 @@ import React from 'react';
 
 import { Button, Checkbox, Heading, Text, TextInput } from '../../components/index';
 
-// import { Container } from './styles';
-
 const Register: React.FC = () => {
   return (
     <div className='max-w-[400px] relative top-[50%] translate-y-[-50%] mx-auto'>
