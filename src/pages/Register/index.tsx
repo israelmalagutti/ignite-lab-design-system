@@ -1,8 +1,7 @@
 import { EnvelopeSimple, Lock } from 'phosphor-react';
 import React from 'react';
 
-import { Button, Checkbox, Heading, Text, TextInput } from '../../components/index';
-import {Logo} from '../../components/Logo';
+import { Button, Checkbox, Heading, Logo, Text, TextInput } from '../../components/index';
 
 const Register: React.FC = () => {
   return (
