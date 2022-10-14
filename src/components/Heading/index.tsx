@@ -5,9 +5,10 @@ import { HeadingProps } from "./types";
 
 const Heading: React.FC<HeadingProps> = (
   {
+    asChild = false,
+    className,
     children,
     size = 'md',
-    asChild = false
   }
 ) => {
   const Comp = asChild ? Slot : 'h2';
@@ -20,7 +21,8 @@ const Heading: React.FC<HeadingProps> = (
           'text-lg': size === 'sm',
           'text-xl': size === 'md',
           'text-2xl': size === 'lg',
-        }
+        },
+        className
       )}
     >
       {children}

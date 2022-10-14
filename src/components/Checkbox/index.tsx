@@ -3,10 +3,11 @@ import { Check } from 'phosphor-react';
 
 import { CheckboxProps } from "./types";
 
-const Checkbox: React.FC<CheckboxProps> = ({}) => {
+const Checkbox: React.FC<CheckboxProps> = (props) => {
 
   return (
     <CheckboxPrimitive.Root
+      {...props}
       className='bg-gray-800 flex gap-2 h-6 w-6 p-[2px] rounded'
     >
       <CheckboxPrimitive.Indicator>

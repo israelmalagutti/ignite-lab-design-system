@@ -1,3 +1,3 @@
-import { ReactNode } from "react";
+import * as ChecboxPrimitive from "@radix-ui/react-checkbox";
 
-export interface CheckboxProps {};
+export interface CheckboxProps extends ChecboxPrimitive.CheckboxProps {};

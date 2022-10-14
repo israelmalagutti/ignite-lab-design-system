@@ -5,10 +5,13 @@ import { TextProps } from "./types";
 
 const Text: React.FC<TextProps> = (
   {
+    asChild = false,
+    className,
+
     children,
     size = 'md',
-    asChild = false
-  }) => {
+  }
+) => {
   const Comp = asChild ? Slot : 'span';
 
   return (
@@ -19,7 +22,8 @@ const Text: React.FC<TextProps> = (
           'text-xs': size === 'sm',
           'text-md': size === 'md',
           'text-lg': size === 'lg',
-        }
+        },
+        className
       )}
     >
       {children}
